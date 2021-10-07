@@ -1,0 +1,19 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+  eventr-be:
+    image: eventr-be
+    environment:
+      MONGODB_CONNSTRING: mongodb://jpe:jpe-eventr-pw-pke@udr5avc3EGC3ykz@mongodb
+    ports:
+      - 3000:3000
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: jpe
+      MONGO_INITDB_ROOT_PASSWORD: jpe-eventr-pw-pke@udr5avc3EGC3ykz
+    ports:
+      - 27017:27017

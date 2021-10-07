@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es2015", "esnext"],
+    "allowJs": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "outDir": "build",
+    "pretty": true
+  },
+  "include": ["**/*.ts", "controllers/*.ts", "models/*.ts", "routes/*.ts", "utils/*.ts", "server.ts", "app.ts"],
+  "exclude": ["node_modules", "build"]
+}
